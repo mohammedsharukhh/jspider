@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#parent .subject{
+    height: 100px;
+    width: 100px;
+    padding: 2px;
+    margin:5px;
+    border: 10px sold black;
+    background-color: aqua;
+}
+body button{
+    box-sizing: content-box;
+    color: blue;
+    background-color: brown;
+}
+/* 
+button:active{
+    color: aqua;
+    background-color: black;
+} */
+/* button:hover{
+    color: black;
+    background-color: aqua;
+} */
+
+
+body > button:visited{
+    color: brown;
+}
+
+.subject::first-line{
+    color: blue;
+}
