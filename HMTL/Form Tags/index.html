@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and form validators</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form action="" method="">
+        <label for="NAME">NAME:</label>
+        <input type="text" name="NAME" id="NAME" placeholder="Enter your name" required><br>
+        <label for="password">password:</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password"required>
+        <br><label for="Gmail">Gmail:</label>
+        <input type="email" name="Gmail" id="Gmail" placeholder="Enter your Gmail" readonly autocomplete="on" required><br>
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" maxlength="10" minlength="0" pattern="[0-9]{10}" title="Please Enter the Numeric value" autofocus></br>
+       <label for="Gender">Gender</label>
+        <input type="radio" id="Male" name="Gender" value="Male" required >
+        <label for="Male">Male</label>
+        <input type="radio" id="FemMale" name="Gender" value="FemMale" required> 
+        <label for="FemMale">FemMale</label>
+        <input type="radio" id="Others" name="Gender" value="Others" required disabled>
+        <label for="Others">Others</label><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+    </form>
+
+    action	Specifies the URL where form data should be submitted. Example: <form action="/submit">.
+        method	Specifies the HTTP method for submission. Options:
+        - get: Appends form data to the URL (visible).
+        - post: Sends form data in the HTTP body (secure for sensitive data).
+        enctype	Specifies the encoding type for form data. Used with method="post". Options:
+        - application/x-www-form-urlencoded (default).
+        - multipart/form-data (for file uploads).
+        - text/plain (plain text).
+        target	Specifies where to display the response after form submission. Options:
+        - _self (default): Same window/tab.
+        - _blank: New tab/window.
+        - _parent: Parent frame.
+        - _top: Full body of the window.
+        autocomplete	Enables or disables auto-completion for form fields. Options:
+        - on (default): Enables auto-completion.
+        - off: Disables auto-completion.
+        novalidate	Disables form validation on submission.
+        name	Assigns a name to the form for identification (e.g., in JavaScript).
+        rel	Specifies the relationship between the form and its target (used with target).
+        2. <input> Element Attributes
+        Attribute	Description
+        type	Specifies the type of input. Examples: text, password, email, number, file, etc.
+        name	Assigns a name to the input field for form submission and identification.
+        value	Specifies the default value of the input field.
+        placeholder	Provides a short hint about the expected value (displayed inside the field).
+        required	Marks the field as mandatory.
+        maxlength	Specifies the maximum number of characters allowed.
+        minlength	Specifies the minimum number of characters required.
+        pattern	Validates the input against a regular expression.
+        readonly	Makes the input field read-only (non-editable).
+        disabled	Disables the input field (grayed out and non-editable).
+        autofocus	Automatically focuses the input field when the page loads.
+        multiple	Allows multiple values (e.g., for file or email inputs).
+        step	Specifies the interval for numerical input (e.g., step="2" for type="number").
+        min and max	Define minimum and maximum values for numerical input.
+        size	Specifies the visible width of the input field (in characters).
+        list	Links the input field to a <datalist> for predefined suggestions.
+        3. <textarea> Element Attributes
+        Attribute	Description
+        name	Assigns a name to the text area for form submission.
+        rows	Specifies the number of visible text lines.
+        cols	Specifies the width of the text area (in characters).
+        placeholder	Displays a hint inside the text area.
+        maxlength	Limits the maximum number of characters.
+        required	Marks the text area as mandatory.
+        readonly	Makes the text area read-only.
+        disabled	Disables the text area.
+        autofocus	Automatically focuses the text area when the page loads.
+        4. <button> Element Attributes
+        Attribute	Description
+        type	Specifies the button type. Options:
+        - submit: Submits the form (default).
+        - reset: Resets the form fields.
+        - button: Just a clickable button (no default behavior).
+        name	Assigns a name to the button for identification.
+        value	Specifies a value associated with the button (submitted with the form).
+        disabled	Disables the button.
+        autofocus	Automatically focuses the button when the page loads.
+        5. <select> and <option> Element Attributes
+        Attribute	Description
+        <select>	
+        name	Assigns a name to the select field for form submission.
+        required	Marks the select field as mandatory.
+        multiple	Allows multiple selections.
+        disabled	Disables the select field.
+        autofocus	Automatically focuses the select field when the page loads.
+        <option>	
+        value	Specifies the value to be submitted when the option is selected.
+        selected	Pre-selects the option by default.
+        disabled	Disables the option.
+        6. <label> Element Attributes
+        Attribute	Description
+        for	Links the label to a specific form control by its id. Example: <label for="email">Email:</label>.
+</body>
+</html>
