@@ -1,0 +1,57 @@
+
+a:active{
+    color: brown;
+    background-color: red;
+}
+button:active{
+    color: green;
+    background-color: hotpink;
+}
+button:focus{
+    color: purple;
+    
+}
+a:hover{
+    color: chartreuse;
+}
+input{
+    outline: none;
+    border: solid red;
+}
+input:active{
+    color: chartreuse;
+}
+input:focus{
+    border-color: blue;
+    color: red;
+}
+#case::before{
+    content: '*';
+}
+p::selection {
+    background-color: hotpink;
+    color: aliceblue;
+}
+P::after{
+    content: '*';
+}
+P::before{
+    content: '*';   
+}
+a {
+    text-decoration:none;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: larger;
+    font-variant: small-caps;
+    font-stretch: extra-expanded;
+    text-transform: capitalize;
+    text-indent: 10%;
+    text-shadow: 1px 2px 10px hotpink;
+    text-align: justify;
+    /* height: max-contentss; */
+    text-decoration: none;
+}
+

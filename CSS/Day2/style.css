@@ -1,0 +1,45 @@
+/* body {
+    background-color: aqua;
+}
+
+div{
+    background-color: hotpink;
+}
+div p button{
+    color: aliceblue;
+    background-color: black;
+}
+p button{
+    color: blue;
+}
+#parent .child{
+    background-color: red;
+}
+
+#parent>button{
+    background-color: purple;
+}
+#parent>p>button{
+    background-color: purple;
+} */
+
+#list {
+    background-color: hotpink;
+}
+
+.one ~ .two{
+    color: chartreuse;
+}
+
+.two + .three{
+color: aqua;
+}
+
+/* .one + .four{
+  not possible  
+} */
+
+
+.one ~ .four {
+    color: #3604ff;
+}
