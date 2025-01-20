@@ -1,0 +1,344 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+#BOX1 {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    transition: all;
+    transition-duration: 5s;
+}
+
+#BOX2 {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    transition: all;
+    transition-duration: 5s;
+}
+
+#BOX3 {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    transition: all;
+    transition-duration: 5s;
+}
+
+#BOX4 {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    transition: all;
+    transition-duration: 5s;
+}
+#BOX5 {
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    transition: all;
+    transition-duration: 5s;
+}
+#BOX1:hover{
+    transform: rotate(30deg);
+    transform: scale(1.10);
+    transform: translate(124px,150px);
+    background-color: yellow;
+   
+}
+#BOX2:hover{
+    transform: rotate(30deg);
+    transform: translate(124px,150px);
+    transform: rotate(60deg) translate(150px);
+    background-color: hotpink;
+}
+#BOX3:hover{
+    transform: rotate(30deg);
+    transform: scale(1.10);
+    transform: translate(124px,150px);
+    background-color: orange;
+}
+#BOX4:hover{
+    transform: rotate(30deg);
+    transform: translate(124px,150px);
+    background-color: red;
+   
+}
+#BOX5:hover{
+    transform: rotate(30deg);
+    transform: translate(124px,150px);
+    /* transform: skew(20deg); */
+    transform: rotate(60deg) translate(150px);
+    background-color: blue;
+}
+
+.Box1-1 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: linear-gradient(red,black );
+}
+.Box1-2 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: linear-gradient(to top,hotpink,black);
+}
+.Box1-3 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: linear-gradient(to bottom ,blue,black)
+}
+.Box1-4 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: linear-gradient(to left, orange,black)
+}
+.Box1-5 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: linear-gradient(to right, green,black)
+}
+
+.Box2-1{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(rgba(98, 96, 232, 0.794),rgba(225, 15, 15, 0.645));
+
+}
+.Box2-2{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(red,blue);
+    
+}
+.Box2-3{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(green,yellow);
+    
+}
+.Box2-4{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(blue,red)
+    
+}
+.Box2-5{
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: radial-gradient(hotpink, yellow);
+    
+}
+.Box3-1{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(rgba(98, 96, 232, 0.794),rgba(225, 15, 15, 0.645));
+
+}
+.Box3-2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(red,blue);
+    
+}
+.Box3-3{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(green,yellow);
+    
+}
+.Box3-4{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:radial-gradient(blue,red);
+    
+}
+.Box3-5{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: radial-gradient(hotpink, yellow);
+
+    
+}
+
+.Box4-1 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-linear-gradient(red 0px 5px,black 32px 24px);
+}
+.Box4-2 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-linear-gradient(to top,hotpink 0px 5px,black 32px 24px);
+}
+.Box4-3 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-linear-gradient(to bottom,blue 0px 5px,black 32px 24px);
+}
+.Box4-4 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-linear-gradient(to left,orange 0px 5px,black 32px 24px);
+}
+.Box4-5 {
+    padding:10px;
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-linear-gradient(to right,green 0px 5px,black 32px 24px);
+}
+.Box5-1{ 
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:repeating-radial-gradient(rgb(248, 216, 10) 10px 10px, red 22px 0px);
+
+}
+.Box5-2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-radial-gradient(rgb(205, 4, 104) 0px 10px, blue 39px 44px);
+    
+}
+.Box5-3{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:repeating-radial-gradient(rgb(44, 219, 9) 10px 10px, rgb(236, 213, 9) 22px 0px);
+    
+}
+.Box5-4{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image:repeating-radial-gradient(blue 10px 10px, red 22px 0px);
+    
+}
+.Box5-5{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    background-image: repeating-radial-gradient(hotpink 0px 10px, black 39px 44px);
+}
