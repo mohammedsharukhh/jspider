@@ -3,34 +3,29 @@
     margin: 0;
     box-sizing: border-box;
 }
-#parent .subject{
-    height: 100px;
-    width: 100px;
-    padding: 2px;
-    margin:5px;
-    border: 10px sold black;
-    background-color: aqua;
-}
-body button{
-    box-sizing: content-box;
-    color: blue;
-    background-color: brown;
-}
-/* 
-button:active{
-    color: aqua;
-    background-color: black;
-} */
-/* button:hover{
-    color: black;
-    background-color: aqua;
-} */
 
-
-body > button:visited{
-    color: brown;
+body{
+    background-image: radial-gradient(circle, #8A2BE2, #FF69B4);
 }
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    background-image: radial-gradient(circle, #8A2BE2, #FF69B4);
+    transition-property: all;
+    
 
-.subject::first-line{
-    color: blue;
+}
+.box{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+    margin: 20px;
+    transition-duration: 1s;
+    
+}
+.box:hover{
+    transform: scale(1.10);
+    cursor: pointer;
 }
