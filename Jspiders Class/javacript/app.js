@@ -98,7 +98,8 @@ golbal scope;
 script scope;
 block scope;
 local scope/ function scope;
- -----------------------------------------
+
+
  golbal scope 
 
  any identifer is declared using by using var keywork can ba accessed anywhere in the progeram;
