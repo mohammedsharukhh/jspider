@@ -1,0 +1,81 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+.parent{
+    /* height: 500px; px is fixed value 
+    width: 500px; 
+    height: 50%;
+    width: 50%;
+    border: 2px solid black;
+}
+.box1{
+    border-style: inset;
+    height: 10em;
+    width: 50%;
+   background-image: linear-gradient(blue,red);
+    
+}
+.box2{
+    border-style: inset;
+    height: 10rem;
+    width: 50%;
+    background-image: linear-gradient(red,black)
+} */
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    FONT-FAMILY: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 140px;
+    font-weight: bolder;
+    height: 50%;
+    width: 50%;
+    animation-name:change-bg-color;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;   
+    animation-timing-function: ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+@keyframes change-bg-color {
+    0%{
+       background-image: linear-gradient(blue,red);
+       border-radius: 0%;
+    }
+    25%{
+        background-image: linear-gradient(red,black);
+        border-radius: 50% 0% 0 50%;
+    }
+    50%{
+        background-image: linear-gradient(blue,black);
+        border-radius: 50% 50% 0 50%;
+    }
+    75%{
+        background-image: linear-gradient(hotpink,black);
+        border-radius: 50% 50% 50% 0%;
+    }
+    100%{
+        background-image: linear-gradient(green,black);
+        border-radius: 50%;
+    }
+}

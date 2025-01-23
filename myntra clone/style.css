@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(230, 230, 230);
+}
+#navbar {
+    height: 90px;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(250, 247, 247);
+    position: sticky;
+    top: 0;
+}
+#navbar .logo_of_myntra{
+    height: 53px;
+    width: 36px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 100px;
+}
+.nav-items{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+    
+}
+.nav-items .child{
+    margin: 5px;
+    background-color: rgb(250, 247, 247);
+    text-align: center;
+    margin-left: 80px;
+    font-weight: bolder;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.search {
+       display: flex;
+        padding-left: 40px; 
+        border-radius: 4px;
+        flex-wrap: wrap;
+        height: 40px;
+        width: 450px;
+        border-style: inset;
+        border: #ccc;
+        box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.1);
+        margin-left: 25px;
+}
+.search-button{
+    position: absolute;
+    left: 2%;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 20px;
+
+}
+.search-button > img{
+    height: 35px;
+    width: 35px;
+}
+.search-button i {
+    font-size: 16px;
+}
+.search-button:hover {
+    background-color: white;
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+.login button {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: rgb(250, 247, 247);
+}
+.login button img{
+    position: relative;
+    border: none;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;    
+
+}
