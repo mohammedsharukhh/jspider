@@ -57,8 +57,6 @@ body{
     -webkit-text-fill-color: transparent;
     
 }
-
-
 @keyframes change-bg-color {
     0%{
        background-image: linear-gradient(blue,red);
