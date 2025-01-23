@@ -61,7 +61,7 @@ html,body{
     margin-top: 20px;
     font-size: 1.5rem;
     align-items: center;
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: repeating-radial-gradient(rgb(4, 0, 255),black);
 }
@@ -108,7 +108,7 @@ a {
 }
 .links > .iteams:hover {
     transform: scale(1.1);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: radial-gradient(red,black);   
  }
