@@ -1,8 +1,9 @@
 document.write(typeof 2+3);
 document.write(typeof Boolean);
 document.write(typeof Symbol());
-document.write(typeof null);
 document.write(typeof String);
+ document.write (typeof String["jhsdfhbsdhfb"]);
+document.write (typeof(String));
 document.write(typeof 2 + Boolean());
 document.write(typeof Boolean());
 
@@ -200,3 +201,96 @@ console.log(typeof(typeof(typeof("text" - 4) * typeof(8 + "9"))));
 console.log(typeof(typeof(typeof("null" + 1) / typeof(3 + "value"))));
 console.log(typeof(typeof(typeof("world" + "hello") - typeof("4" * 3))));
 console.log(typeof(typeof(typeof(undefined + "null") * typeof("2" - 5))));
+let ak = 20;
+let bk = 20;
+console.log( ak !== bk);
+
+
+let x = 10;
+let y = 15;
+console.log(x !== y);
+
+let a = "hello";
+let b = "world";
+console.log(a == b);
+
+let num1 = 5;
+let num2 = "5";
+console.log(num1 === num2);
+
+let age1 = 25;
+let age2 = 20;
+console.log(age1 > age2);
+
+let price1 = 100;
+let price2 = 150;
+console.log(price1 < price2);
+
+let score1 = 80;
+let score2 = 80;
+console.log(score1 >= score2);
+
+let height1 = 6.2;
+let height2 = 6.1;
+console.log(height1 <= height2);
+
+let isRaining = true;
+let isSnowing = false;
+console.log(isRaining != isSnowing);
+
+let apples = 10;
+let bananas = 20;
+console.log(apples < bananas);
+
+let oranges = 15;
+let grapes = 15;
+console.log(oranges == grapes);
+
+let speed1 = 60;
+let speed2 = 80;
+console.log(speed1 <= speed2);
+
+let temp1 = 35;
+let temp2 = 35;
+console.log(temp1 >= temp2);
+
+let length1 = 10.5;
+let length2 = 12.5;
+console.log(length1 < length2);
+
+let width1 = 7.2;
+let width2 = 7.2;
+console.log(width1 === width2);
+
+let hours1 = 8;
+let hours2 = 6;
+console.log(hours1 > hours2);
+
+let days1 = 5;
+let days2 = 10;
+console.log(days1 != days2);
+
+let val1 = null;
+let val2 = undefined;
+console.log(val1 !== val2);
+
+let numA = 0;
+let numB = "0";
+console.log(numA == numB);
+
+let scoreA = 100;
+let scoreB = 90;
+console.log(scoreA > scoreB);
+
+let weight1 = 70;
+let weight2 = 70;
+console.log(weight1 <= weight2);
+
+
+let a = 20;
+let result = (a == 30)? ("Its equal"):("No its not equal");
+console.log(result);
+
+
+
+
