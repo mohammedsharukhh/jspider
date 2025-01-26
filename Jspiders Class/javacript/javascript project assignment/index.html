@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Border with Two Sections</title>
-    <link rel="stylesheet" href="style.css">
+    <title>js class css inerview question</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="left-section">
-            <h1 style="display: flex; justify-content: center; color: gray;">Your Result</h1>
-            <p class="count">42<sup style="font-size: xx-small;">of 100 </sup></p></sub></p>
-            
-            <h2 style="display: flex;justify-content: center;">Great</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    <div id="main">
+
+    <div id="first_main">
+        <h1 class="heading">Your Result</h1><br>
+        <div class="numbers">
+            <span class="Main_number">76</span>
+            <span class="Desciption_number">of 100</span>
         </div>
-        <div class="right-section">
-            <h2>Summary</h2>
-            <div class="box">
-                <span class="left hotpink">Reaction</span>
-                <span class="right"><span class="blue">90</span>/100</span>
-            </div>
-            <div class="box">
-                <span class="left yellow">Memory</span>
-                <span class="right"><span class="blue">92</span>/100</span>
-            </div>
-            <div class="box">
-                <span class="left green">Verbal</span>
-                <span class="right"><span class="blue">61</span>/100</span>
-            </div>
-            <div class="box">
-                <span class="left blue">Visual</span>
-                <span class="right"><span class="blue">73</span>/100</span>
-            </div>
-            <button>Continue</button>
+        <div id="footer">
+            <h1 class="footer_head">Great</h1>
+            <span class="footer_description">You scored higher than 65% of the pepole who have taken these tests</span>
+        </div>
+    </div>  
+
+    <div id="second_main">
+        <div class="summary"><h4>Summary</h4></div>
+        <div class="buttons">
+            <ul type="none">
+                <li class="sections"><img src="./thunder.png"alt="" class="image">Reaction<span class="number_of_section"><span class="rightside_numbers">80</span><span class="number100">/100</span></span></li>
+                <li class="sections"><img src="./clock.png"alt=""class="image">Memory<span class="number_of_section"><span class="rightside_numbers">92</span><span class="number100">/100</span></span></li>
+                <li class="sections"><img src="./cloud.png"alt=""class="image">Verbal<span class="number_of_section"><span class="rightside_numbers">61</span><span class="number100">/100</span></span></li>
+                <li class="sections"><img src="./view.png"alt=""class="image">Visual<span class="number_of_section"><span class="rightside_numbers">73</span><span class="number100">/100</span></span></li>
+            </ul>
+        </div>
+        <div class="footer_button"> 
+            <button type="button">Continue</button>
         </div>
     </div>
+</div>
 </body>
 </html>
