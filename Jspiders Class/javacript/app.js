@@ -310,5 +310,14 @@ function sharuk(){
 }
 sharuk();
 
+function sharuk01(){
+    console.log("hey how are you?");
+    return "hii";
+}
+// sharuk01(); when ever using return we should not use this 
+console.log(sharuk01()); //undefinded with answere is becouse when function again looks into console there is nothing to print this happend internally
 
+// annomus function
+// function () {
 
+// }
