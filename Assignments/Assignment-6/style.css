@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Okra, Helvetica, sans-serif;
+    color: white;
+}
+
+#navigation {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative; 
+    z-index: 10;
+}
+
+#get_app_text {
+    height: 50px;
+    width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2px;
+    position: absolute;
+    left: 19%;
+    top: 35%;
+    font-size: small;
+    background-color: transparent;
+}
+
+#app_image {
+    height: 15px;
+    width: 15px;
+    filter: invert(100%);
+}
+
+#navigation_list_iteams {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: medium;
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    background-color: transparent;
+
+}
+
+.navigation_bar_text {
+    padding: 20px;
+    background-color: transparent;
+}
+
+#main_image {
+    height: 50vh; 
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: -1;
+}
+
+#main_name_parent{
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    top: 55px;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main_name_child{
+    margin-top: 15px;
+    height: 55px;
+    width: auto;
+}
+
+form{
+    height: 10%;
+    width: 36%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Bengaluru{
+    margin: 15px;
+    padding:15px;
+    font-size:xx-large;
+    opacity: 1;
+    object-fit: none;
+}
+select {
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    z-index: 10;
+    margin-right: -21px;
+    border: none;
+    text-align: center;
+    outline: none;
+}
+
+option {
+    padding: 10px;
+}
+
+.map_icon{
+    height: 20px;
+    position: relative;
+    left: 27px;
+    z-index: 11;
+
+}
+.serach_image{
+    height: 25px;
+    background-color: white;
+    position: absolute;
+    right: 56%;
+    z-index: 10;
+    bottom: 11.5%;
+   
+}
+
+#input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 1px 0px white;
+    border-radius: 10px;
+    z-index: 1;
+    outline: none;
+    padding-left: 11%;;
+}
+
