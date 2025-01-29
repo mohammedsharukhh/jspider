@@ -1,152 +1,235 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Okra, Helvetica, sans-serif;
 }
 
-html, body {
+body {
     height: 100%;
     width: 100%;
-    font-family: Okra, Helvetica, sans-serif;
-    color: white;
+    position: relative;
+    overflow-x: hidden;
 }
 
-#navigation {
-    height: 50px;
+#Background_image_cantainer {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative; 
-    z-index: 10;
+    height: 65%;
+    background-image: url('./assests/mainpage.png'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    z-index: -1; 
+    animation: removeBlur 2s ease-in-out forwards;
+}
+
+/* Navigation Bar */
+#navigation {
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+    left: 50%;
+    z-index: 1; 
 }
 
 #get_app_text {
-    height: 50px;
-    width: 10%;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
+    align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
-    gap: 2px;
     position: absolute;
-    left: 19%;
-    top: 35%;
-    font-size: small;
-    background-color: transparent;
+    margin: 15px;
+    font-size: 14px;
+    color: #fff;
+    padding: 30px;
+    left: 15%;
+    font-size: medium;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+#get_app_text:hover {
+    transform: scale(1.2);
 }
 
 #app_image {
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    margin-right: 5px;
     filter: invert(100%);
+    cursor: pointer;
 }
 
-#navigation_list_iteams {
-    height: 20px;
-    width: 100%;
+#navigation_list_items {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: medium;
-    position: absolute;
-    top: 35%;
-    left: 15%;
-    background-color: transparent;
-
+    list-style: none;
+    z-index: 1; 
 }
 
 .navigation_bar_text {
-    padding: 20px;
-    background-color: transparent;
+    margin: 15px;
+    padding: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: medium;
+    text-align: center;
+    z-index: 1; 
 }
 
-#main_image {
-    height: 50vh; 
-    width: 100%;
-    position: absolute;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    z-index: -1;
+.navigation_bar_text:hover {
+    transform: scale(1.2);
 }
 
-#main_name_parent{
-    padding: 20px;
-    margin: 20px;
-    overflow: hidden;
-    position: relative;
-    top: 55px;
-    z-index: 10;
+/* Main Content Section */
+#main_name_parent {
+    text-align: center;
+    margin-top: 25px;
+    z-index: 1; 
+}
+
+.main_name_child {
+    height: 80px;
+    margin-top: 50px;
+    padding: 15px;
+    z-index: 1; 
+    animation: removeBlurlogo 2s ease-in-out;
+}
+
+.Bengaluru {
+    font-size: 32px;
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Search Section */
+#search_section {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.main_name_child{
-    margin-top: 15px;
-    height: 55px;
-    width: auto;
+    margin: 20px 0;
+    z-index: 1; 
 }
 
-form{
-    height: 10%;
-    width: 36%;
+.search_container {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
     align-items: center;
-}
-
-.Bengaluru{
-    margin: 15px;
-    padding:15px;
-    font-size:xx-large;
-    opacity: 1;
-    object-fit: none;
-}
-select {
-    height: 40px;
-    width: 200px;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 10px;
-    z-index: 10;
-    margin-right: -21px;
+    background-color: rgba(255, 255, 255); 
     border: none;
-    text-align: center;
-    outline: none;
-}
-
-option {
+    border-radius: 5px;
     padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    z-index: 1; 
+    margin-right: -18px;
 }
 
-.map_icon{
+.search_container2 {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255); 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    z-index: 1; 
+}
+
+.map_icon, .search_image {
     height: 20px;
-    position: relative;
-    left: 27px;
-    z-index: 11;
-
+    margin-right: 10px;
 }
-.serach_image{
-    height: 25px;
-    background-color: white;
-    position: absolute;
-    right: 56%;
-    z-index: 10;
-    bottom: 11.5%;
+
+#location, #search_input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+#search_input {
+    width: 300px;
+}
+
+/* Image Gallery Section */
+#content_wraper{
+    height: 80px;
+    width: 100%;
+}
+#image_parent_of_section2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    
+}
+
+.inside_container {
+    text-align: center;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    box-sizing: inherit;
+    box-shadow: 0px 0px 1px black;
+    border: none;
+    margin: 0px 15px 15px 0px;
    
 }
 
-#input{
-    height: 40px;
-    width: 100%;
-    border: none;
-    box-shadow: 0px 0px 1px 0px white;
-    border-radius: 10px;
-    z-index: 1;
-    outline: none;
-    padding-left: 11%;;
+.img {
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px; 
+    
 }
 
+.inside_container p {
+    padding-left: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: black;
+    
+}
+
+.inside_container .head_of_decription{
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+.inside_container .discription{
+    font-size: smaller;
+    font-weight: 400;
+    color: rgb(79, 79, 79);
+    line-height: 1px;
+    padding-bottom: 20px;
+}
+
+@keyframes removeBlur {
+    0% {
+        filter: blur(45px); 
+    }
+    100% {
+        filter: blur(0); 
+    }
+}
+@keyframes removeBlurlogo {
+    0% {
+        filter: blur(45px); 
+    }
+    25% {
+        filter: blur(20px);
+    }
+    50%{
+        filter: blur(10px); 
+    }
+    100% {
+        filter: blur(0); 
+    }
+}

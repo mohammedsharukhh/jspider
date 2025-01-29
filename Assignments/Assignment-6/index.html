@@ -3,39 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assests/zomato_logo.webp" type="image/x-icon"><!--favicon-->
+    <link rel="shortcut icon" href="./assests/zomato_logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <title>Zomato</title>
 </head>
 <body>
-        <!-- navigation bar -->
-         <nav id="navigation">
-            <img src="./assests/mainpage.png" alt="Main Image" id="main_image">
-            <h4 id="get_app_text"><img src="./assests/get_app.png" id="app_image">Get the App</h4>
-            <ul id="navigation_list_iteams" type="none">
-                <li class="navigation_bar_text">Invester Relations</li>
-                <li class="navigation_bar_text">Add restaurant</li>
-                <li class="navigation_bar_text">Log in</li>
-                <li class="navigation_bar_text">Sign up</li>
-            </ul>
-         </nav>
-         <div id="main_name_parent">
-            <img src="./assests/main_name.png" class="main_name_child">
-            <p class="Bengaluru">Discover the best food & drinks in Bengaluru</p>
-            <!-- --------------------search section-------------------------------- -->
-             
-            <form>
-            <label for="section"><img src="./assests/placeholder.png" class="map_icon"></label>
-            <select id="section" name="Location">
-                <option value="Bengaluru">Bengaluru</option>
-                <option value="Mumbai">Mumbai</option>
-                <option value="Chennai">Chennai</option>
-                <option value="chitradurga">chitradurga</option>
-                <option value="Tumkur">Tumkur</option> 
-            </select>
-            <label for="input"><img src="./assests/search.png"class="serach_image"></label> 
-            <input type="search" placeholder="Search for restaurent, cuisine or a dish" autofocus id="input" >
+    <!--Background image cantainer-->
+    <div id="Background_image_cantainer">
+    </div>
+    <!-- Navigation Bar -->
+    <span id="get_app_text"><img src="./assests/get_app.png" id="app_image">Get the App</span>
+    <nav id="navigation">
+        <ul id="navigation_list_items">
+            <li class="navigation_bar_text">Investor Relations</li>
+            <li class="navigation_bar_text">Add Restaurant</li>
+            <li class="navigation_bar_text">Log In</li>
+            <li class="navigation_bar_text">Sign Up</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <div id="main_name_parent">
+        <img src="./assests/main_name.png" class="main_name_child" alt="Zomato Logo">
+        <p class="Bengaluru">Discover the best food & drinks in Bengaluru</p>
+
+        <!-- Search Section -->
+        <form id="search_section">
+            <div class="search_container">
+                <label for="location"><img src="./assests/placeholder.png" class="map_icon" alt="Location Icon"></label>
+                <select id="location" name="location">
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
+                    <option value="Chitradurga">Chitradurga</option>
+                    <option value="Tumkur">Tumkur</option>
+                </select>
+            </div>
+            <div class="search_container2">
+                <label for="search_input"><img src="./assests/search.png" class="search_image" alt="Search Icon"></label>
+                <input type="search" id="search_input" placeholder="Search for restaurants, cuisine, or a dish" autofocus>
+            </div>
         </form>
+    </div>
+
+    <!-- Image Gallery Section -->
+     <div id="content_wraper">
+    
+     </div>
+    <div id="image_parent_of_section2">
+        <div class="inside_container">
+            <img src="./assests/food.jpeg" class="img" alt="Food Image">
+            <p class="head_of_decription">Order Online</p>
+            <p class="discription">Stay home and order to you doorstep</p>
         </div>
+        <div class="inside_container">
+            <img src="./assests/restauorent.jpeg" class="img" alt="Restaurant Image">
+            <p class="head_of_decription">Dining</p>
+            <p class="discription">View the city's favourite dinning venues</p>
+        </div>
+        <div class="inside_container">
+            <img src="./assests/show.png" class="img" alt="Nightlife Image">
+            <p class="head_of_decription">Live Events</p>
+            <p class="discription">Discover india's best events & concerts</p>
+        </div>
+    </div>
 </body>
-</html> 
+</html>
