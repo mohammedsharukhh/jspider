@@ -293,31 +293,124 @@
 
 
 
-function sharuk(){
-    console.log("hii");
-    function zareena(){
-        console.log("hello")
-        function fayaz(){
-            console.log("hey")
-            function mohammedali(){
-                console.log("yes")
-            }
-            return mohammedali();
-        }
-        fayaz();
-        }
-        zareena();
-}
-sharuk();
+// function sharuk(){
+//     console.log("hii");
+//     function zareena(){
+//         console.log("hello")
+//         function fayaz(){
+//             console.log("hey")
+//             function mohammedali(){
+//                 console.log("yes")
+//             }
+//             return mohammedali();
+//         }
+//         fayaz();
+//         }
+//         zareena();
+// }
+// sharuk();
 
-function sharuk01(){
-    console.log("hey how are you?");
-    return "hii";
-}
+
+
+// function sharuk01(){
+//     console.log("hey how are you?");
+//     return "hii";
+// }
 // sharuk01(); when ever using return we should not use this 
-console.log(sharuk01()); //undefinded with answere is becouse when function again looks into console there is nothing to print this happend internally
+// console.log(sharuk01()); //undefinded with answere is becouse when function again looks into console there is nothing to print this happend internally
 
 // annomus function
 // function () {
 
 // }
+
+
+// function sharuk(){
+//    console.log("I Love MERN Stack");
+// }
+// sharuk();
+// -------------------------------
+// let sharuk = function (){
+//             console.log("hello");
+// }
+// sharuk();  we will hget the output correctly
+// console.log(sharuk()); we will get output with undefined 
+// console.log(sharuk); it will print the full body
+// -----------------------------------------
+
+// let sharuk = function(){
+//     console.log("heloo");
+//     return "hiii";
+// }
+// console.log(sharuk); it will print full body
+// console.log(sharuk()); it will print hellow and undefind
+// sharuk(); it will print helloo
+// ---------------------------------------------------------
+
+// let sharuk = function g(){
+//     console.log("heloo");
+//     return "hiii";
+// }
+// G(); g is not defind
+// console.log(G()); g is not defind
+
+// -------------------------------------------------
+// let sharuk = function(){
+//     console.log("heloo");
+//     return "hiii";  
+// }
+// sharuk(); it will only give hwlooo as the resturning value we are not print it out
+// -------------------------------------------------------------------------------------
+
+// let sharuk = function(){
+//     console.log("heloo");
+//     return hiii;
+// }
+//  console.log(sharuk()); uncaught ReferenceError hii is not defing
+
+// ----------------------------------------
+// let sum = function(a,b) {
+//     console.log(a+b)
+// }
+// console.log(sum(2+3));
+
+//  it will print NAN and undefined
+// ----------------------------------------
+
+
+// let sum = function(a,b) {
+//     console.log(a+b)
+// }
+// console.log(sum(2,3));  we will get the answere but with this we will get undefind as well as we are print it again
+// sum(2,3); we will get the value as 5;
+// console.log(sum);  it will print the whole thing
+
+
+// const base = parseInt(prompt('Enter the base: ')); 100
+// const height = parseInt(prompt('Enter the height: ')); 200
+// const perpendicular_height = parseInt(prompt('Enter the perpendicular height: '));
+// const a = parseInt(prompt('Enter the value of a: '));
+// const b = parseInt(prompt('Enter the value of b: '));
+// const length = parseInt(prompt('Enter the length: '));
+
+// function AreaOf2Dshape(base,height,perpendicular_height,a,b,length,callback){
+//             callback(base,height,perpendicular_height,a,b,length);
+// }
+// AreaOf2Dshape(base, height, perpendicular_height, a, b, length, function(base,height){
+//         console.log(`Square:${base * height}`)
+// })
+// AreaOf2Dshape(base, height, perpendicular_height,a,b,length, function(base,height){
+//     console.log(`triangle:${base * height}`)
+// })
+// AreaOf2Dshape(base,height, perpendicular_height,a,b,length, function(base,perpendicular_height){
+//     console.log(`circal:${base*perpendicular_height/2}`)
+// })
+// AreaOf2Dshape(base,height, perpendicular_height,a,b,length, function(height){
+//     console.log(`itto:${((a+b)*height)/2}`)
+// })
+// AreaOf2Dshape(base,height, perpendicular_height,a,b,length, function(base,perpendicular_height){
+//     console.log(`kitto:${base * perpendicular_height}`)
+// })
+// AreaOf2Dshape(base,height, perpendicular_height ,a,b,length, function(height,length){
+//     console.log(`tatto:${length * height /2}`)
+// })
