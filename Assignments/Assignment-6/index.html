@@ -9,10 +9,11 @@
 </head>
 <body>
     <!--Background image cantainer-->
-    <div id="Background_image_cantainer">
+    <div id="background_parent">
+        <div id="Background_image_cantainer">
     </div>
     <!-- Navigation Bar -->
-    <span id="get_app_text"><img src="./assests/get_app.png" id="app_image">Get the App</span>
+    <div id="get_app_text"><img src="./assests/get_app.png" id="app_image">Get the App</div>
     <nav id="navigation">
         <ul id="navigation_list_items">
             <li class="navigation_bar_text">Investor Relations</li>
@@ -28,7 +29,7 @@
         <p class="Bengaluru">Discover the best food & drinks in Bengaluru</p>
 
         <!-- Search Section -->
-        <form id="search_section">
+        <form id="search_section">  
             <div class="search_container">
                 <label for="location"><img src="./assests/placeholder.png" class="map_icon" alt="Location Icon"></label>
                 <select id="location" name="location">
@@ -41,14 +42,13 @@
             </div>
             <div class="search_container2">
                 <label for="search_input"><img src="./assests/search.png" class="search_image" alt="Search Icon"></label>
-                <input type="search" id="search_input" placeholder="Search for restaurants, cuisine, or a dish" autofocus>
+                <input type="search" id="search_input" placeholder="Search for restaurants, cuisine, or a dish" autofocus class="placeholder">
             </div>
         </form>
     </div>
 
     <!-- Image Gallery Section -->
      <div id="content_wraper">
-    
      </div>
     <div id="image_parent_of_section2">
         <div class="inside_container">
@@ -66,6 +66,19 @@
             <p class="head_of_decription">Live Events</p>
             <p class="discription">Discover india's best events & concerts</p>
         </div>
+    </div>
+    <!---Collections-->
+    <div id="collections">
+        <div class="collection">
+            <h4 class="headline">Collections</h4>
+            <pre class="pretag">Explore curated lists of top restaurants, cafes, pubs, and bars in Bengaluru, based on trends <a href="./" class="img_parent">          All collections in Bengaluru</a><img src="./assests/arrowhead.png" class="collection_images"</pre>
+        </div>
+    </div>
+    <div id="collection_images">
+        <section class="collection_child_images"><img src="./assests/collection1.avif" class="superchild"></section>
+        <section class="collection_child_images"><img src="./assests/collection2.avif" class="superchild"></section>
+        <section class="collection_child_images"><img src="./assests/collection3.avif" class="superchild"></section>
+        <section class="collection_child_images"><img src="./assests/collection4.avif" class="superchild"></section>
     </div>
 </body>
 </html>
