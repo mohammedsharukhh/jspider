@@ -35,7 +35,7 @@
 // document.write(typeof 2 - 2);
 // document.write(typeof NaN);
 // let a = "hii";
-// document.write(isNaN(a)); 
+// document.write(isNaN(a));
 // a = 10;
 // document.write(isNaN(a));
 //  document.write(typeof 2+3);
@@ -74,7 +74,7 @@
 //  document.write(typeof 2 - 2);
 //  document.write(typeof NaN);
 //  let a = "hii";
-//  document.write(isNaN(a)); 
+//  document.write(isNaN(a));
 //  a = 10;
 //  document.write(isNaN(a));
 //  document.write(typeof NaN);
@@ -110,8 +110,7 @@
 //  var a = [10,20,30,40,50];
 //  console.log(a);
 //  a[0] = 100;
-//  console.log(a); 
-
+//  console.log(a);
 
 //  console.log(a);
 //  var a = 10;
@@ -133,13 +132,12 @@
 //  document.write(a+b);
 //  document.write(a);
 
-
 // golbal scope;
 // script scope;
 // block scope;
 // local scope/ function scope;
 //  -----------------------------------------
-//  golbal scope 
+//  golbal scope
 
 //  any identifer is declared using by using var keywork can ba accessed anywhere in the progeram;
 //  var b = 20;
@@ -204,7 +202,6 @@
 // let ak = 20;
 // let bk = 20;
 // console.log( ak !== bk);
-
 
 // let x = 10;
 // let y = 15;
@@ -286,12 +283,9 @@
 // let weight2 = 70;
 // console.log(weight1 <= weight2);
 
-
 // let a = 20;
 // let result = (a == 30)? ("Its equal"):("No its not equal");
 // console.log(result);
-
-
 
 // function sharuk(){
 //     console.log("hii");
@@ -310,20 +304,17 @@
 // }
 // sharuk();
 
-
-
 // function sharuk01(){
 //     console.log("hey how are you?");
 //     return "hii";
 // }
-// sharuk01(); when ever using return we should not use this 
+// sharuk01(); when ever using return we should not use this
 // console.log(sharuk01()); //undefinded with answere is becouse when function again looks into console there is nothing to print this happend internally
 
 // annomus function
 // function () {
 
 // }
-
 
 // function sharuk(){
 //    console.log("I Love MERN Stack");
@@ -334,7 +325,7 @@
 //             console.log("hello");
 // }
 // sharuk();  we will hget the output correctly
-// console.log(sharuk()); we will get output with undefined 
+// console.log(sharuk()); we will get output with undefined
 // console.log(sharuk); it will print the full body
 // -----------------------------------------
 
@@ -357,7 +348,7 @@
 // -------------------------------------------------
 // let sharuk = function(){
 //     console.log("heloo");
-//     return "hiii";  
+//     return "hiii";
 // }
 // sharuk(); it will only give hwlooo as the resturning value we are not print it out
 // -------------------------------------------------------------------------------------
@@ -377,14 +368,12 @@
 //  it will print NAN and undefined
 // ----------------------------------------
 
-
 // let sum = function(a,b) {
 //     console.log(a+b)
 // }
 // console.log(sum(2,3));  we will get the answere but with this we will get undefind as well as we are print it again
 // sum(2,3); we will get the value as 5;
 // console.log(sum);  it will print the whole thing
-
 
 // const base = parseInt(prompt('Enter the base: ')); 100
 // const height = parseInt(prompt('Enter the height: ')); 200
@@ -414,3 +403,119 @@
 // AreaOf2Dshape(base,height, perpendicular_height ,a,b,length, function(height,length){
 //     console.log(`tatto:${length * height /2}`)
 // })
+
+// let demo = () => {
+//     document.write("MERN Stack Developer")
+// }
+// demo();
+
+// let sharuk = (a,b,c,d) => {
+//     document.write(a+b+c+d)
+// }
+// sharuk(10,20,30,40);
+
+// let zareena = a => {
+//     document.write("Jspider")
+// }
+// zareena();
+
+// let fayaz = (a) => {
+//     return "hii";
+// }
+// console.log(fayaz());
+
+// (function b() {
+//     console.log(a)
+// })();
+// var a = 100;
+// (function b(){
+//     console.log(a)
+// })();
+// (function b(){
+//     console.log(a)
+// })();
+// (function b(){
+//     console.log(a)
+// // })();
+
+// var a = 10;
+// var b = 20;
+// var c= 30;
+// function Grandparent(){
+//     console.log("hi i am Grand parent");
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+//     var e = 40
+//     var f = 50
+//     var g = 60
+//     function parent(){
+//         console.log("hii i am parent");
+//         console.log(e);
+//         console.log(f);
+//         console.log(g);
+//         var h = 70;
+//         var i = 80;
+//         var j = 90;
+//         function child(){
+//             console.log("Hii i am child");
+//             console.log(h);
+//             console.log(i);
+//             console.log(j);
+//         }return child;
+//     }return parent;
+// }Grandparent()()();
+
+// function demo(string){
+//     console.log(string);
+// }
+// demo("mohammed sharuk m s".length);
+
+// function Js(string){
+//     console.log(string);
+// }
+// Js("mohammed fayaz".at(2));
+
+// function Js(string){
+//     console.log(string);
+// }
+// Js("mohammed ali".charAt(2));
+
+// function Js(string){
+//     console.log(string);
+// }
+// Js("zareena".charCodeAt(2));
+
+// function Js(string){
+//     console.log(string);
+// }
+// Js("zareena".charCodeAt(2));
+
+// function Js(string){
+//     console.log(string[1]);
+// }
+// Js("Asif");
+
+// Returns a section of a string.
+
+// @param start — The index to the beginning of the specified portion of stringObj.
+
+// @param end
+// let str = "mohammed";
+// console.log(str.slice(1, 5));
+// console.log(str.slice(-1, 2));
+// console.log(str.slice(-1, -1));
+
+// The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
+
+// The substring() method extracts characters from start to end (exclusive).
+
+// The substring() method does not change the original string.
+
+// If start is greater than end, arguments are swapped: (4, 1) = (1, 4).
+
+// Start or end values less than 0, are treated as 0.
+
+// console.log(str.substring(1, 2));
+// console.log(str.substring(-1, 4));
+// console.log(str.substring(-1,-2));
