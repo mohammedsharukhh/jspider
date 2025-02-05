@@ -519,3 +519,128 @@
 // console.log(str.substring(1, 2));
 // console.log(str.substring(-1, 4));
 // console.log(str.substring(-1,-2));
+
+
+// var str = "hello world, welcome          to the universe";
+// console.log(str.startsWith("world",6));//true
+// console.log(str.endsWith("universe"));//true
+// console.log(str.indexOf("universe"));//28
+// console.log(str.lastIndexOf("universe"));//28
+// console.log(str.endsWith("universe",35));//flase
+// document.write(str.indexOf("w"));
+// document.write(str.at(6))
+// console.log(str.charAt(8));
+// document.write(str.concat("mohammed sharuk m s"));
+// document.write(str +" "+ "mohammed sharuk m s");
+// document.write(str.charCodeAt("a"));
+// document.write(str.lastIndexOf("h"));
+// document.write(str.includes("universe")); retuen true or false;
+// document.write(str.indexOf("universe"));
+// document.write(str.startsWith("universe",28));
+// document.write(str.endsWith("universe",28));
+
+
+
+// Remove spaces with trim():
+// The trim() method removes whitespace from both sides of a string.
+
+// The trim() method does not change the original string.
+// document.write(str.trim());
+// let text = "       Hello World!        ";
+// let result = text.replace(/^\s+|\s+$/gm,'');
+// console.log(result)
+
+
+// The trimStart() method removes whitespace from the beginning of a string.
+
+// The trimStart() method does not change the original string.
+
+// The trimStart() method works like trim(), but removes whitespace only from the start of a string
+// let text1 = "     Hello World!     ";
+// console.log(text1.trimStart());
+
+
+
+
+// The trimEnd() method removes whitespace from the end of a string.
+
+// The trimEnd() method does not change the original string.
+
+// The trimEnd() method works like trim(), but removes whitespace only from the end of a string.
+// let text1 = "     Hello World!     ";
+// console.log(text1.trimEnd())
+
+
+
+
+// The padStart() method pads a string from the start.
+
+// The padStart() method pads a string with another string (multiple times) until it reaches a given length.
+
+// let text = "5";
+// let padded = text.padStart(4,"0");
+// console.log(padded);
+
+
+// let numb = 5;
+// let text = numb.toString();
+// let padded = text.padStart(4,"10");
+// console.log(padded);
+
+// padend
+
+// var number=10;
+// let txt =number.toString();
+// console.log(txt.padEnd(10,"1"));
+
+
+
+
+
+// JavaScript String repeat()
+// The repeat() method returns a string with a number of copies of a string.
+
+// The repeat() method returns a new string.
+
+// The repeat() method does not change the original string.
+
+// let sharuk="mohammed sharuk m s\n";
+// console.log(sharuk.repeat(10));
+
+
+
+// Replacing String Content
+// The replace() method replaces a specified value with another value in a string:
+
+// The replace() method does not change the string it is called on.
+
+// The replace() method returns a new string.
+
+// The replace() method replaces only the first match
+
+// If you want to replace all matches, use a regular expression with the /g flag set. See examples below.
+
+// const demo = "sharuk is a software developer";
+// const demo1= demo.replace("software","mern stack");
+// console.log(demo1.toUpperCase());
+
+
+
+
+// replaceAll()
+// let sharuk = "Cats Cats Cats";
+// console.log(sharuk.replaceAll("Cats","Dogs"));
+//replacese all the matches 
+
+
+// Converting a String to an Array
+
+// JavaScript String split()
+// A string can be converted to an array with the split() method:
+// Split the words, and return the second word:
+// Split the characters, including spaces:
+
+// let text = "How are you doing today?";
+// const myArray = text.split("doing");
+// let word = myArray[1];
+// console.log(word);
