@@ -2,10 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra project by sharukh</title>
+    <link rel="icon" href="./Myntra-icon-logo.svg" type="image/x-icone">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <script src="app.js"></script>
+    <header id="nav_header">
+        <nav id="navbar">
+            <section id="image">
+                <img src="./images/Myntra-icon-logo.svg" class="myntra_logo">
+            </section>
+            <section id="cloth_section">
+                <div class="section_elements">MEN</div>
+                <div class="section_elements">WOMEN</div>
+                <div class="section_elements">KIDS</div>
+                <div class="section_elements">HOME & LIVING</div>
+                <div class="section_elements">BEAUTY</div>
+                <div class="section_elements">STUDIO<sup class="sub_class">NEW</sup></div>
+            </section>
+            <form action="./php" method="get" id="serach_bar_form">
+                <label for="search_bar"><img src="./images/search.png" class="search_icon"></label>
+                <input type="search" id="search_bar" placeholder="Search for products, brands and more" required class="search_bar_class" >
+            </form>
+            <section id="cart_section">
+                <div class="cart_items"><img src="./images/user.png" class="image_of_carts">Profile</div>
+                <div class="cart_items"><img src="./images/wishlist.png" class="image_of_carts">Wishlist</div>
+                <div class="cart_items"><img src="./images/parcel.png" class="image_of_carts">Bag</div>
+            </section>
+        </nav>
+    </header>
 </body>
 </html>
