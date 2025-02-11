@@ -279,4 +279,5 @@ body {
 .shop_by_offer_image_image{
     height: 290px;
     width: 256px;
+    cursor: pointer;
 }
