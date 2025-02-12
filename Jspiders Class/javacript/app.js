@@ -1531,7 +1531,3 @@ sharuk1.emp_gender = "Male";
 console.log(Object.freeze(sharuk1));
 //* how to check the object is frezzed or not
 console.log(Object.isFrozen(sharuk1)); //! boolean output
-
-
-
-
