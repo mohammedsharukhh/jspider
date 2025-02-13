@@ -297,7 +297,6 @@ body {
     font-family: Assistant;
     height: 100%;
     width: 100%;
-    border: 2px solid red;
     display: flex;
     justify-content: center ;
 }
@@ -319,7 +318,6 @@ body {
     margin-top: 20px;
     font-weight: bolder;
     font-size: 15px;
-    cursor: pointer;
     width: fit-content;
 }
 .heading_child{
@@ -350,6 +348,7 @@ body {
     width: 22px;
     margin-right: 10px;
     border-radius: 2px;
+    cursor: pointer;
 }
 .guarantee_class{
     height: 40px;
