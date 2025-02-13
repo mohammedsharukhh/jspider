@@ -281,3 +281,71 @@ body {
     width: 256px;
     cursor: pointer;
 }
+#bottom_add{
+    height: 280px;
+    width: 100%;
+    display: flex;
+    padding-right: 90px;
+    padding-left: 90px;
+}
+.bottom_add_image{
+    width: 100%;
+    cursor: pointer;
+}
+
+#footer_main{
+    font-family: Assistant;
+    height: 100%;
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center ;
+}
+#footer_area_container{
+    height: fit-content;
+    width: 80%;
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+}
+.iteams_listed{
+    height: fit-content;
+    width: fit-content;
+    border: 2px solid rebeccapurple;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.heading{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 15px;
+    cursor: pointer;
+    width: fit-content;
+}
+.heading_child{
+    font-size: 15px;
+    line-height: 2;
+    opacity: 0.8;
+    width: fit-content;
+    cursor: pointer;
+}
+
+#store_image{
+    display: flex;
+    
+}
+.stores{
+    height: 50px;
+    width:150px;
+    margin: 5px;
+    cursor:pointer;
+}
+.social_media_images{
+    object-fit: scale-down;
+    overflow-x: hidden;
+    object-position: 10%,20%;
+}
