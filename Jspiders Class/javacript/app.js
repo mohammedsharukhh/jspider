@@ -1518,16 +1518,174 @@ let sharuk = "MERN stack Developer";
 
 //! freez()
 
-class Sharuk {
-    constructor(emp_name,emp_id){
-        this.emp1 = emp_name;
-        this.emp2_id = emp_id;
-    }
-}
-let sharuk1 = new Sharuk("mohammed sharuk m s",8)
-Object.seal(sharuk1);
-sharuk1.emp2_id = 18; //^ Nothing is possibal
-sharuk1.emp_gender = "Male";
-console.log(Object.freeze(sharuk1));
-//* how to check the object is frezzed or not
-console.log(Object.isFrozen(sharuk1)); //! boolean output
+// class Sharuk {
+//     constructor(emp_name,emp_id){
+//         this.emp1 = emp_name;
+//         this.emp2_id = emp_id;
+//     }
+// }
+// let sharuk1 = new Sharuk("mohammed sharuk m s",8)
+// Object.seal(sharuk1);
+// sharuk1.emp2_id = 18; //^ Nothing is possibal
+// sharuk1.emp_gender = "Male";
+// console.log(Object.freeze(sharuk1));
+// //* how to check the object is frezzed or not
+// console.log(Object.isFrozen(sharuk1)); //! boolean output
+
+
+//! callback loop 
+
+// function addition(val, callback) {
+//     callback(val + 10, false);
+// }
+
+// function subtraction(val, callback) {
+//     callback(val - 10, false);
+// }
+
+// function multiplication(val, callback) {
+//     callback(val * 10, false);
+// }
+
+// function division(val, callback) {
+//     callback(val / 10, false);
+// }
+
+// addition(10, (add, error) => {
+//     if (!error) {
+//         console.log(add);
+//         subtraction(10, (sub, error) => {
+//             if (!error) {
+//                 console.log(sub);
+//                 multiplication(10, (mul, error) => {
+//                     if (!error) {
+//                         console.log(mul);
+//                         division(10, (div, error) => {
+//                             if (!error) {
+//                                 console.log(div);
+//                             }
+//                         });
+//                     }
+//                 });
+//             }
+//         });
+//     }
+// });
+
+
+
+
+
+
+
+
+
+// // !using Promise
+
+// function addition(val) {
+//     return new Promise((resolve, reject) => {
+//         resolve(val + 10);
+//     });
+// }
+
+// function subtraction(val) {
+//     return new Promise((resolve, reject) => {
+//         resolve(val - 10);
+//     });
+// }
+
+// function multiplication(val) {
+//     return new Promise((resolve, reject) => {
+//         resolve(val * 10);
+//     });
+// }
+
+// function division(val) {
+//     return new Promise((resolve, reject) => {
+//         resolve(val / 10);
+//     });
+// }
+
+// addition(10)
+//     .then(add => {
+//         console.log(add);
+//         return subtraction(add);
+//     })
+//     .then(sub => {
+//         console.log(sub);
+//         return multiplication(sub);
+//     })
+//     .then(mul => {
+//         console.log(mul);
+//         return division(mul);
+//     })
+//     .then(div => {
+//         console.log(div);
+//     })
+//     .catch(error => {
+//         console.error(error);
+//     });
+
+
+//! promise
+
+// let a = new Promise((resolve, reject) => {
+//     resolve("hi i am resolved");
+//     reject("hi i am rejected");
+// });
+// console.log(a);
+
+// let a = new Promise((resolve, reject) => {
+//     // resolve("hi i am resolved");
+//     reject("hi i am rejected");
+// });
+// a.then((result)=>{
+//    console.log(result);
+// }).catch((result2)=> {
+//     console.log(result2)
+// }).finally(()=>{
+//     console.log("hi i am finally")
+// })
+
+// let sharuk01 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk01");
+//     rejected("hi i am not sharuk01");
+// })
+// let sharuk02 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk02");
+//     rejected("hi i am not sharuk02");
+// })
+// let sharuk03 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk03");
+//     rejected("hi i am not sharuk03");
+// })
+// let sharuk04 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk04");
+//     rejected("hi i am not sharuk04");
+// })
+// let sharuk05 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk05");
+//     rejected("hi i am not sharuk05");
+// })
+
+// Promise.race([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => {
+//     console.log(result)
+// }).catch((err) => {
+//     console.log(err)
+// });
+
+let sharuk01 = new Promise((res,rej)=>{
+    res("i am resolved");
+    rej("i am rejected");
+})
+setTimeout(() => {
+    console.log(sharuk01)
+}, 2000);
+
+let sharuk02 = new Promise((res,rej)=>{
+    res("i am resolved");
+    rej("i am rejected");
+})
+setTimeout(() => {
+    console.log(sharuk02)
+}, 4000);
