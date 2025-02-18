@@ -368,4 +368,47 @@ body {
     margin: 20px 0px 5px 0px;
 }
 
+#POPULAR{
+    height: 300px;
+    width: 100%;
+    padding-right: 100px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+}
+#popluar_search{
+    width: 80%;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 65px;
+    /* border: 2px solid red */
+}
+#popluar_search1{
+    height: 20px;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#popluar_search2{
+    height: 20px;
+    width: 15%;
+    /* border: 2px solid black; */
+    /* margin-right: 10px; */
+}
+#hrtags{
+    height: 10px;
+    width: 90%;
+    /* border: 2px solid black; */
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.spanelements{
+    font-size: 13px;
+    opacity: 0.8;
+}

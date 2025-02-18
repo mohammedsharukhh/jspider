@@ -1647,45 +1647,49 @@ let sharuk = "MERN stack Developer";
 //     console.log("hi i am finally")
 // })
 
-// let sharuk01 = new Promise((resolved,rejected)=>{
-//     resolved("hi i am sharuk01");
-//     rejected("hi i am not sharuk01");
-// })
-// let sharuk02 = new Promise((resolved,rejected)=>{
-//     resolved("hi i am sharuk02");
-//     rejected("hi i am not sharuk02");
-// })
-// let sharuk03 = new Promise((resolved,rejected)=>{
-//     resolved("hi i am sharuk03");
-//     rejected("hi i am not sharuk03");
-// })
-// let sharuk04 = new Promise((resolved,rejected)=>{
-//     resolved("hi i am sharuk04");
-//     rejected("hi i am not sharuk04");
-// })
-// let sharuk05 = new Promise((resolved,rejected)=>{
-//     resolved("hi i am sharuk05");
-//     rejected("hi i am not sharuk05");
-// })
-
-// Promise.race([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => {
-//     console.log(result)
-// }).catch((err) => {
-//     console.log(err)
-// });
-
-let sharuk01 = new Promise((res,rej)=>{
-    res("i am resolved");
-    rej("i am rejected");
+let sharuk01 = new Promise((resolved,rejected)=>{
+    resolved("hi i am sharuk01");
+    rejected("hi i am not sharuk01");
 })
-setTimeout(() => {
-    console.log(sharuk01)
-}, 2000);
-
-let sharuk02 = new Promise((res,rej)=>{
-    res("i am resolved");
-    rej("i am rejected");
+let sharuk02 = new Promise((resolved,rejected)=>{
+    resolved("hi i am sharuk02");
+    rejected("hi i am not sharuk02");
 })
-setTimeout(() => {
-    console.log(sharuk02)
-}, 4000);
+let sharuk03 = new Promise((resolved,rejected)=>{
+    resolved("hi i am sharuk03");
+    rejected("hi i am not sharuk03");
+})
+let sharuk04 = new Promise((resolved,rejected)=>{
+    // resolved("hi i am sharuk04"); 
+    rejected("hi i am not sharuk04");
+})
+let sharuk05 = new Promise((resolved,rejected)=>{
+    resolved("hi i am sharuk05");
+    rejected("hi i am not sharuk05");
+})
+
+// Promise.all([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //! in all if it will execute all the promise and only wait if there is rejection which will print that promise
+    // Promise.race([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //! race will go step by step exceution
+//  Promise.allSettled([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //! even if there is reject statment it will print all the elements
+// Promise.any([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => {  //! returns the output which ever fullfiles the promise at first 
+// Promise.reject([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //& not understood
+console.log(result)
+}).catch((err) => {
+    console.log(err)
+});
+
+// let sharuk01 = new Promise((res,rejf)=>{
+//     res("i am resolved");
+//     rej("i am rejected");
+// })
+// setTimeout(() => {
+//     console.log(sharuk01)
+// }, 2000);
+
+// let sharuk02 = new Promise((res,rej)=>{
+//     res("i am resolved");
+//     rej("i am rejected");
+// })
+// setTimeout(() => {
+//     console.log(sharuk02)
+// }, 4000);
