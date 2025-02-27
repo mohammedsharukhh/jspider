@@ -13,15 +13,22 @@ body {
     align-items: center;
     background-image: url('./image.png');
     backdrop-filter: blur(10px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #container {
-    width: 300px;
+    width: 450px;
+    height: 80vh;
     padding: 20px;
     background: transparent;
     backdrop-filter: blur(10px);
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0,0.8);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #container_for_child {
