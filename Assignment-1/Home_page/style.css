@@ -74,7 +74,7 @@ html,body{
     font-size: smaller;
     cursor: pointer;
 }
-#btn{
+#anker{
     height: 40px;
     width: 190px;
     color: black;
@@ -83,6 +83,10 @@ html,body{
     outline: none;
     margin: 20px;
     cursor: pointer;
+    background: white;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
 }
 #para1{
     font-size: smaller;
