@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-image: url('./img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#f_container{
+ height: 500px;
+ width: 400px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ backdrop-filter: blur(5px);
+ box-shadow: 0px 0px 2px 0px whitesmoke;
+ border-radius: 10px;
+
+}
+#head{
+    margin: 20px 0px 20px 0px;
+
+}
+
+#background{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.input{
+    height: 40px;
+    width: 70%;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 2px white;
+    backdrop-filter: blur(1px); 
+    font-weight: bolder;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    
+}
+#check{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#checkbox{
+    margin: 10px;
+    cursor: pointer;
+}
+#para{
+    margin-left: 30px;
+    font-size: smaller;
+    cursor: pointer;
+}
+#anker{
+    height: 40px;
+    width: 190px;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background: white;  
+    padding: 10px;
+    margin: 20px;
+
+}
+#para1{
+    font-size: smaller;
+}
+
+#para2{
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+
+}
+#para2:hover{
+    color: blue
+}
+#Remember{
+    cursor: pointer;
+}
+
+#show_pwd_img{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 166px;
+    right: 73px;
+    color: white;
+    filter: invert(100%);
+    cursor: pointer;
+}

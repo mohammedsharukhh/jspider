@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-image: url('./foggy-forest-landscape-dark-silhouette-mysterious-atmosphere-generated-by-ai.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px;
+    backdrop-filter: sepia(90%);
+
+}
+#form{
+    height: 550px;
+    width: 450px;
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 5px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+}
+#head{
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+}
+input{
+    height: 20px;
+    width: 100px;
+    height: 35px;
+    width: 342px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0px 0px 5px white;
+    background-color: rgba(255, 255, 255, 0.517);
+    border: none;
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+input::placeholder{
+    color: rgb(0, 0, 0);
+
+}
+input:focus{
+    background-color: white;
+    color: black;
+}
+#sub_btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    box-sizing: 0px 0px 5px white;
+    color: white;
+    outline: none;
+    box-shadow: 0px 0px 5px white;
+    background-color: rgba(45, 8, 255, 0.565);
+    border: none;
+    margin: 10px;
+}
+#reset_btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background: none;
+    outline: none;
+    box-sizing: 0px 0px 5px white;
+    color: white;
+    outline: none;
+    box-shadow: 0px 0px 5px white;
+    background-color: rgba(255, 0, 0, 0.517);
+    border: none;
+    margin: 10px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+button{
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.input{
+    padding-left: 10px;
+    margin: 20px;
+}
