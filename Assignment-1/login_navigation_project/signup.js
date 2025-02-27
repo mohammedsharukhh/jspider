@@ -17,7 +17,7 @@ console.log(username)
     else{
         window.open('./signin.html')
         window.location.reload() 
-        localStorage.setItem('username',username);
+        localStorage.setItem('gmail',gmail);
         localStorage.setItem('password',password);
     }
 })

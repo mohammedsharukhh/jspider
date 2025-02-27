@@ -1,22 +1,30 @@
 let form = document.getElementById("f_container");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
- let login = document.getElementById("username").value;
-  console.log(username);
-  let logipwd = document.getElementById("password").value;
-  console.log(password);
-  if(login == '' || logipwd == ''){
-    alert("Fields are mandatory😢😢")
-  }else{
-    alert("logged Successfully😁😁")
-    window.location.reload()
-  }
-});
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    let email = document.getElementById('email').value
+    console.log(email)
+    let loginpassword = document.getElementById('pwd').value
+    console.log(loginpassword)
+    let username = localStorage.getItem('email')
+    let password = localStorage.getItem('password')
+    console.log(username,password)
+    if(email == "" || loginpassword == ""){
+      alert("Fields are mandatory😢😢")
+    }
+     else if(email == username && loginpassword == password){
+      alert("logged Successfully😁😁")
+      window.open("./home.html")
+    }
+    else{
+      alert("Incorrect Details😢😢")
+    }
+})
 
 
-let pwdsharuk = document.getElementById("password");
-let hidden_elemt = document.getElementById('show_pwd_img')
-hidden_elemt.addEventListener("click",(e)=>{
+let pwdsharuk = document.getElementById("pwd");
+let show_pwd = document.getElementById('show_pwd_img')
+show_pwd.addEventListener("click",(e)=>{
     e.preventDefault()
     if(pwdsharuk.value != ""){
         if(pwdsharuk.type === "password"){
@@ -24,14 +32,9 @@ hidden_elemt.addEventListener("click",(e)=>{
             hidden_elemt.src = "./view (1).png"
         }else{
             pwdsharuk.type = "password"
-            hidden_elemt.src = "./hide.png"
+            show_pwd.src = "./hide.png"
         }
     }else{
         alert('Please enter your password')
     }
 });
-
-
-
-
-
