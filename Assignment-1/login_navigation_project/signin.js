@@ -21,7 +21,6 @@ form.addEventListener('submit',(e)=>{
     }
 })
 
-
 let pwdsharuk = document.getElementById("pwd");
 let show_pwd = document.getElementById('show_pwd_img')
 show_pwd.addEventListener("click",(e)=>{
@@ -29,7 +28,7 @@ show_pwd.addEventListener("click",(e)=>{
     if(pwdsharuk.value != ""){
         if(pwdsharuk.type === "password"){
             pwdsharuk.type = "text"
-            hidden_elemt.src = "./view (1).png"
+            show_pwd.src = "./view (1).png"
         }else{
             pwdsharuk.type = "password"
             show_pwd.src = "./hide.png"
