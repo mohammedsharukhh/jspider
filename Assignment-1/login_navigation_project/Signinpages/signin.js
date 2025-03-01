@@ -13,7 +13,7 @@ form.addEventListener('submit',(e)=>{
       alert("Fields are mandatory😢😢")
     }
      else if(email == username && loginpassword == password){
-      alert("logged Successfully😁😁")
+      alert("logged Successfully😁😁😜")
       window.open("../Home_page/index.html")
     }
     else{
