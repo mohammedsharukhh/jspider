@@ -14,7 +14,7 @@ form.addEventListener('submit',(e)=>{
     }
      else if(email == username && loginpassword == password){
       alert("logged Successfully😁😁")
-      window.open("./home.html")
+      window.open("../Home_page/index.html")
     }
     else{
       alert("Incorrect Dtails😢😢")
