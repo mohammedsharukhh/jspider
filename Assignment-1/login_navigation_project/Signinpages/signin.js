@@ -17,7 +17,7 @@ form.addEventListener('submit',(e)=>{
       window.open("../Home_page/index.html")
     }
     else{
-      alert("Incorrect Dtails😢😢")
+      alert("Incorrect Dtails😢😢🤞")
     }
 })
 
