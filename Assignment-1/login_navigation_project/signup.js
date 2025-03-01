@@ -15,7 +15,7 @@ console.log(username)
         alert('Password is not matching')
     }
     else{
-        window.open('./signin.html')
+        window.open('')
         window.location.reload() 
         localStorage.setItem('gmail',gmail);
         localStorage.setItem('password',password);

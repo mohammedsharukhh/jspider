@@ -6,7 +6,7 @@ form.addEventListener('submit',(e)=>{
     console.log(email)
     let loginpassword = document.getElementById('pwd').value
     console.log(loginpassword)
-    let username = localStorage.getItem('email')
+    let username = localStorage.getItem('gmail')
     let password = localStorage.getItem('password')
     console.log(username,password)
     if(email == "" || loginpassword == ""){
@@ -17,7 +17,7 @@ form.addEventListener('submit',(e)=>{
       window.open("./home.html")
     }
     else{
-      alert("Incorrect Details😢😢")
+      alert("Incorrect Dtails😢😢")
     }
 })
 
