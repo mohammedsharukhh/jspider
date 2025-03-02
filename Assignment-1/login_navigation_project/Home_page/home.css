@@ -1,19 +1,19 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    
 }
-#myvideo{
+
+#myvideo {
     position: absolute;
     right: 0;
     top: 0;
@@ -23,7 +23,8 @@ body{
     height: auto;
     z-index: -1;
 }
-#container{
+
+#container {
     height: fit-content;
     width: 100%;
     z-index: 10;
@@ -32,7 +33,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.div{
+
+.div {
     height: 246px;
     width: 252px;
     background: none;
@@ -48,26 +50,64 @@ body{
     align-items: center;
 }
 
-.div:hover{
+.div:hover {
     cursor: pointer;
-    transform: scale(1.05);    
+    transform: scale(1.05);
     transition: transform 300ms ease-in;
 }
-.images{
+
+.images {
     height: 185px;
     width: 225px;
     border-radius: 10px;
-
 }
-.images:hover{
-    transform: scale(1.05);    
+
+.images:hover {
+    transform: scale(1.05);
     transition: transform 300ms ease;
 }
-.title{
+
+.title {
     text-transform: capitalize;
     font-size: 20px;
     margin-top: 10px;
     font-weight: 900;
     border-radius: 3px;
     color: antiquewhite;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow: auto; 
+    }}
+
+    #container {
+        flex-direction: column; 
+        padding: 10px; 
+
+    .div {
+        width: 90%; 
+        height: auto; 
+        margin: 15px 0; 
+    }
+
+    .images {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .div {
+        width: 95%; 
+        margin: 10px 0; 
+    }
+
+    .title {
+        font-size: 16px;
+    }
 }
