@@ -11,7 +11,7 @@ document.getElementById('button').addEventListener('click', (e) => {
       celebrate();
       setTimeout(() => {
         window.location.reload();
-      },2*3000);
+      },2*2800);
     }
   });
 
