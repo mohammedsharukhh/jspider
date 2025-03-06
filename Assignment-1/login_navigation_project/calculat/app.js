@@ -3,7 +3,6 @@ const buttons = document.querySelectorAll('.btn, .btn1');
 
 let currentInput = '';
 
-
 buttons.forEach(button => {
     button.addEventListener('click', () => {
         const buttonText = button.innerText;
