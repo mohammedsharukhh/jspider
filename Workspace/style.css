@@ -43,6 +43,7 @@ body {
   padding-left: 5px;
   font: bolder;
   color: black;
+  
 }
 #button{
   height: 10%;
@@ -82,7 +83,7 @@ body {
   background: white;
 }
 #button:active{
-  background-image: radial-gradient(circle, red,black);
+  background-image: radial-gradient(circle, rgb(141, 141, 141),black);
 }
 
 /* Snowfall effect */
@@ -124,5 +125,23 @@ body {
 @keyframes fall {
   to {
     transform: translateY(100vh);
+  }
+}
+@media only screen and (min-width: 600px) {
+  .inputs {
+    height: 10%;
+    width: 50%; 
+    margin: 8px 0; 
+    font-size: 14px; 
+  }
+
+  #child {
+    width: 50%;
+    height: 60vh; 
+  }
+
+  #button {
+    width: 20%; 
+    font-size: 14px; 
   }
 }
