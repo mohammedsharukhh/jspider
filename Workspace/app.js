@@ -9,8 +9,12 @@ document.getElementById('button').addEventListener('click', (e) => {
       alert("I think you should click okay😁😁");
       createSnowflakes();
       celebrate();
+      setTimeout(() => {
+        window.location.reload();
+      },2*3000);
     }
   });
+
   
   function createSnowflakes() {
     const numberOfSnowflakes = 150; // Increase the number of snowflakes
@@ -32,7 +36,7 @@ document.getElementById('button').addEventListener('click', (e) => {
       }, 8000); // Match the longest animation duration
     }
   }
-  
+
   function celebrate() {
     // Play celebration sound
     const sound = document.getElementById('celebrationSound');
@@ -82,4 +86,5 @@ document.getElementById('button').addEventListener('click', (e) => {
       });
     }, 750);
   }
+ 
 
