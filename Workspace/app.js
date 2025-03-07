@@ -1,4 +1,4 @@
-document.getElementById('button').addEventListener('click', (e) => {
+document.node('button').addEventListener('click', (e) => {
     e.preventDefault();
     let username = document.getElementById('text').value;
     let password = document.getElementById('password').value;
@@ -17,12 +17,12 @@ document.getElementById('button').addEventListener('click', (e) => {
 
   
   function createSnowflakes() {
-    const numberOfSnowflakes = 150; // Increase the number of snowflakes
+    const numberOfSnowflakes = 150; 
     for (let i = 0; i < numberOfSnowflakes; i++) {
       let snowflake = document.createElement('div');
       snowflake.classList.add('snowflake');
   
-      // Assign a random layer to the snowflake
+
       const layer = Math.floor(Math.random() * 3) + 1;
       snowflake.classList.add(`layer${layer}`);
   
@@ -30,19 +30,18 @@ document.getElementById('button').addEventListener('click', (e) => {
       snowflake.style.opacity = Math.random();
       document.body.appendChild(snowflake);
   
-      // Remove snowflake after animation ends
+     
       setTimeout(() => {
         snowflake.remove();
-      }, 8000); // Match the longest animation duration
+      }, 8000); 
     }
   }
 
   function celebrate() {
-    // Play celebration sound
+
     const sound = document.getElementById('celebrationSound');
     sound.play();
-  
-    // Confetti effects
+
     confetti({
       particleCount: 300,
       spread: 360,
@@ -51,8 +50,7 @@ document.getElementById('button').addEventListener('click', (e) => {
       startVelocity: 45,
       gravity: 1.2,
     });
-  
-    // Additional confetti bursts
+
     setTimeout(() => {
       confetti({
         particleCount: 200,
