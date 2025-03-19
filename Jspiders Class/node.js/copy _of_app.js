@@ -133,7 +133,7 @@
 
 // const { error } = require('console');
 // let path = require('path')
-// console.log(path)
+// // console.log(path)
 // let arrya = 
 // [
 // path.extname("c/users/admin/sharuk.js"),
@@ -153,7 +153,6 @@
 
 //! url module
 
-// ~CRUD Opeartion
 
 // let url = require('url')
 // // console.log(url)
@@ -212,7 +211,7 @@ let fs = require('fs')
 
 //~ delete the file in (asynchronus way)
 
-fs.unlink("app.js",(error)=>{
+fs.unlink("sharuk.txt",(error)=>{
     if(error) throw error;
     console.log("File deleted Successfully")
 })
