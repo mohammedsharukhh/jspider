@@ -1627,6 +1627,56 @@ let sharuk = "MERN stack Developer";
 //     });
 
 
+
+//& shallow copying
+
+
+// let obj = {
+//     emp_name:"mohammed sharuk m s",
+//     emp_id:"08",
+//     emp_address: {
+//         emp_location: "london"
+//     }
+// }
+
+// console.log(obj)
+
+
+// let obj1 = obj
+// console.log(obj1);
+
+// obj1.emp_address.emp_location="usa";
+// console.log(obj1);
+// console.log(obj)
+
+
+//Object.assign
+
+// let a = Object.assign(obj)
+
+// console.log(a);
+
+// a.emp_address="pakistan";
+// console.log(a);
+// console.log(obj);
+
+// let {...obj1} = obj;
+// console.log(obj1);
+
+//& DEEP COPYING
+
+// let a = JSON.parse(JSON.stringify(obj))
+// console.log(a);
+// a.emp_name = "fayaz";
+// console.log(a);
+// console.log(obj)
+
+
+// let a = JSON.stringify(obj);
+// console.log(a)
+
+
+
 //! promise
 
 // let a = new Promise((resolve, reject) => {
@@ -1636,7 +1686,7 @@ let sharuk = "MERN stack Developer";
 // console.log(a);
 
 // let a = new Promise((resolve, reject) => {
-//     // resolve("hi i am resolved");
+    // resolve("hi i am resolved");
 //     reject("hi i am rejected");
 // });
 // a.then((result)=>{
@@ -1647,36 +1697,36 @@ let sharuk = "MERN stack Developer";
 //     console.log("hi i am finally")
 // })
 
-let sharuk01 = new Promise((resolved,rejected)=>{
-    resolved("hi i am sharuk01");
-    rejected("hi i am not sharuk01");
-})
-let sharuk02 = new Promise((resolved,rejected)=>{
-    resolved("hi i am sharuk02");
-    rejected("hi i am not sharuk02");
-})
-let sharuk03 = new Promise((resolved,rejected)=>{
-    resolved("hi i am sharuk03");
-    rejected("hi i am not sharuk03");
-})
-let sharuk04 = new Promise((resolved,rejected)=>{
+// let sharuk01 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk01");
+//     rejected("hi i am not sharuk01");
+// })
+// let sharuk02 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk02");
+//     rejected("hi i am not sharuk02");
+// })
+// let sharuk03 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk03");
+//     rejected("hi i am not sharuk03");
+// })
+// let sharuk04 = new Promise((resolved,rejected)=>{
     // resolved("hi i am sharuk04"); 
-    rejected("hi i am not sharuk04");
-})
-let sharuk05 = new Promise((resolved,rejected)=>{
-    resolved("hi i am sharuk05");
-    rejected("hi i am not sharuk05");
-})
+//     rejected("hi i am not sharuk04");
+// })
+// let sharuk05 = new Promise((resolved,rejected)=>{
+//     resolved("hi i am sharuk05");
+//     rejected("hi i am not sharuk05");
+// })
 
 // Promise.all([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //! in all if it will execute all the promise and only wait if there is rejection which will print that promise
     // Promise.race([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //! race will go step by step exceution
 //  Promise.allSettled([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //! even if there is reject statment it will print all the elements
 // Promise.any([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => {  //! returns the output which ever fullfiles the promise at first 
 // Promise.reject([sharuk01,sharuk02,sharuk03,sharuk04,sharuk05]).then((result) => { //& not understood
-console.log(result)
-}).catch((err) => {
-    console.log(err)
-});
+// console.log(result)
+// }).catch((err) => {
+//     console.log(err)
+// });
 
 // let sharuk01 = new Promise((res,rejf)=>{
 //     res("i am resolved");
