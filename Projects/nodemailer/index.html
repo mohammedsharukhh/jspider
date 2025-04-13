@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-image: url('./img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+#f_container{
+ height: 500px;
+ width: 400px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ backdrop-filter: blur(10px);
+ box-shadow: 0px 0px 2px 0px whitesmoke;
+ border-radius: 10px;
+ 
+
+}
+#head{
+    margin: 20px 0px 20px 0px;
+
+}
+
+#background{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.input{
+    height: 40px;
+    width: 70%;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    padding: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 2px white;
+    backdrop-filter: blur(1px); 
+    font-weight: bolder;
+    color: white;
+    text-transform: capitalize;
+    position: relative;
+    
+}
+#check{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#checkbox{
+    margin: 10px;
+    cursor: pointer;
+}
+#para{
+    margin-left: 30px;
+    font-size: smaller;
+    cursor: pointer;
+}
+#anker{
+    height: 40px;
+    width: 190px;
+    color: black;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background: white;  
+    padding: 10px;
+    margin: 20px;
+
+}
+#para1{
+    font-size: smaller;
+}
+
+#para2{
+    cursor: pointer;
+    text-decoration: none;
+    color: red;
+
+}
+#para2:hover{
+    color: blue
+}
+#Remember{
+    cursor: pointer;
+}
+@keyframes sharuk {
+
+    100%{
+        background-color: crimson;
+    }
+    0%{
+        background: blue;
+    }
+    
+}
+</style>
+<body>
+    <form id="f_container" action="" method="POST">
+        <h1 id="head">Login</h1>
+        <div id="background">
+        <input type="email" placeholder="username"  class="input" id="email" name="email">
+        <input type="password" placeholder="password" class="input" id="password" name="password">
+      </div>
+        <div id="check">
+        <input type="checkbox" id="checkbox"><label for="checkbox" id="Remember">Remember me</label>
+        <p id="para">Forgot password?</p>
+    </div>
+        <button href="/#" id="anker">Login</button>
+        <p id="para1" href="../SignUppages/signup.html">Don't have an account? <a id="para2" href="../SignUppages/index.html" target="_blank">Register</a></p>
+    </form>
+</body>
+</html>
