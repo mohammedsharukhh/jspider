@@ -65,7 +65,6 @@ function Data(request,callback){
     })
 }
 else{
-    res.writeHead(400,{'content-type': 'text/html'})
-    res.end("<h1>Invalid request</h1>")
+    
 }
 }
