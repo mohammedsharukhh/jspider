@@ -16,11 +16,10 @@ let server = http.createServer((req,res)=>{
     }
 })
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on port ${PORT}`);
-});
+server.listen(3000,(err)=>{
+    if(err) throw err
+    console.log("http://localhost:3000")
+})
 
 function Data(request,callback){
     let form = 'application/x-www-form-urlencoded'
