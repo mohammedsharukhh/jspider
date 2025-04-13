@@ -38,7 +38,10 @@ function Data(request,callback){
         let transport = nodemailer.createTransport({
             service : "gmail",
             auth:{
-                
+                process.env.PORT
+process.env.EMAIL_USER
+process.env.EMAIL_PASS
+
                 user: "sharuk3668@gmail.com",
                 pass: "dacjwteocwvbsdro"
             }

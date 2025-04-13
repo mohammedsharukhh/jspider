@@ -1,0 +1,13 @@
+{
+  "name": "nodemailer-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "nodemailer": "^6.10.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

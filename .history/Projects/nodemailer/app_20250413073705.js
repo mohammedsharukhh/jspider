@@ -16,7 +16,7 @@ let server = http.createServer((req,res)=>{
     }
 })
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 
 server.listen(PORT, '0.0.0.0', () => {
@@ -38,7 +38,6 @@ function Data(request,callback){
         let transport = nodemailer.createTransport({
             service : "gmail",
             auth:{
-                
                 user: "sharuk3668@gmail.com",
                 pass: "dacjwteocwvbsdro"
             }
