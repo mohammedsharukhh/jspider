@@ -37,6 +37,66 @@
 // console.log(mohameed.moh(10))
 // console.log(fun.api())
 
+//! OS module
+
+// let os = require('os')
+// console.log(operating_system);
+// console.log(os.arch());
+// console.log(os.cpus());
+// console.log(os.hostname());
+// console.log(os.machine());
+// console.log(os.version());
+// console.log(os.release());
+// console.log(os.platform());
+// console.log(os.totalmem());
+// console.log(os.userInfo());
+// console.log(os.freemem());
+
+
+//! path module 
+let path = require('path')
+// console.log(path)
+
+//& path.basename()
+// let result = path.basename('c/users/admin/mohammedsharukms.text','text')
+// let result2 = path.basename('c/users/admin/mohammedsharukms.text','.text')
+// let result3 = path.basename('c/users/admin/mohammedsharukms.text','.js')
+// console.log(result,result2,result3)
+
+//* path.dirname()
+
+// let result = path.dirname("c/users/admin/mohammed/sharuk")
+// console.log(result)
+// let result1 = path.dirname("c/users/admin/jspiders.js/sharuk/mohammed/sharuk.js")
+// console.log(result1)
+
+//~ path.extname
+// let ext =
+// path.extname('c/users/admin/sharuk/mohammed.js')
+// console.log(ext)
+
+// let ext = [
+//     'c/users/admin/shruk.js',
+//     'c/users/admin/shruk.html',
+//     'c/users/admin/shruk.js',
+//     'c/users/admin/shruk.html',
+//     'c/users/admin/shruk.js'
+// ]
+// ext.map((f)=>{
+//     if(path.extname(f) === '.js')
+//     console.log(path.extname(f)
+// )})
+
+//! normalization
+// let result = 
+// path.normalize('c/users/admin/website///./sharuk')
+// console.log(result)
+
+//! asserts
+
+// let assert = require('asserts')
+
+// console.log(assert)
 
 //! OS module
 
@@ -170,7 +230,6 @@
 
 //! file System (fs)
 
-const { isUtf8 } = require('buffer')
 let fs = require('fs')
 // console.log(fs)
 
@@ -208,12 +267,11 @@ let fs = require('fs')
 // })
 
 //~ delete the file using (Synchronus)
-// fs.unlinkSync("sharuk.js")
+fs.unlinkSync("sharuk.js")
 
 //~ delete the file in (asynchronus way)
 
-fs.unlink("app.js",(error)=>{
-    if(error) throw error;
-    console.log("File deleted Successfully")
-})
-
+// fs.unlink("app.js",(error)=>{
+//     if(error) throw error;
+//     console.log("File deleted Successfully")
+// })
